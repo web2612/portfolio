@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradFlock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accentGradFlock" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#e8b931"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGradFlock)" rx="16"/>
+
+  <!-- Map Grid Overlay -->
+  <path d="M 0 100 H 800 M 0 200 H 800 M 0 300 H 800 M 200 0 V 400 M 400 0 V 400 M 600 0 V 400" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+
+  <!-- Map Road Paths -->
+  <path d="M 50 350 Q 200 150 400 250 T 750 100" stroke="#ff6b35" stroke-width="6" fill="none" opacity="0.6"/>
+  <path d="M 100 50 Q 300 300 700 350" stroke="#06b6d4" stroke-width="4" stroke-dasharray="10 10" fill="none" opacity="0.5"/>
+
+  <!-- Camera Pins -->
+  <g transform="translate(400, 230)">
+    <circle r="30" fill="rgba(255, 107, 53, 0.25)"/>
+    <circle r="18" fill="#ff6b35"/>
+    <path d="M-6 -2 h12 v8 h-12 z M-2 -5 h4 v3 h-4 z" fill="#ffffff"/>
+  </g>
+
+  <g transform="translate(220, 160)">
+    <circle r="22" fill="rgba(6, 182, 212, 0.25)"/>
+    <circle r="14" fill="#06b6d4"/>
+  </g>
+
+  <g transform="translate(620, 140)">
+    <circle r="22" fill="rgba(232, 185, 49, 0.25)"/>
+    <circle r="14" fill="#e8b931"/>
+  </g>
+
+  <!-- Header Card Mockup -->
+  <rect x="50" y="30" width="700" height="50" rx="10" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.15)"/>
+  <text x="80" y="62" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="700" fill="#ffffff">🔍 Search ALPR Camera Locations Near You</text>
+  <rect x="620" y="42" width="110" height="26" rx="6" fill="url(#accentGradFlock)"/>
+  <text x="640" y="60" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#ffffff">FLOCK MAP</text>
+</svg>

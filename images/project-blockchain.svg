@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradBlock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGradBlock)" rx="16"/>
+
+  <!-- Connecting Nodes Network -->
+  <line x1="180" y1="200" x2="330" y2="200" stroke="#06b6d4" stroke-width="4" stroke-dasharray="6 6"/>
+  <line x1="330" y1="200" x2="470" y2="200" stroke="#06b6d4" stroke-width="4" stroke-dasharray="6 6"/>
+  <line x1="470" y1="200" x2="620" y2="200" stroke="#06b6d4" stroke-width="4" stroke-dasharray="6 6"/>
+
+  <!-- Block 1 -->
+  <g transform="translate(110, 140)">
+    <rect width="140" height="120" rx="14" fill="#1e293b" stroke="#06b6d4" stroke-width="2"/>
+    <text x="20" y="35" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" fill="#06b6d4">BLOCK #001</text>
+    <text x="20" y="60" font-family="'Fira Code', monospace" font-size="10" fill="#94a3b8">Hash: 0x9a4f...</text>
+    <text x="20" y="80" font-family="'Inter', sans-serif" font-size="11" fill="#10b981">✓ Vote Verified</text>
+  </g>
+
+  <!-- Block 2 (Center Shield) -->
+  <g transform="translate(320, 110)">
+    <rect width="160" height="180" rx="18" fill="#1e293b" stroke="url(#cyanGrad)" stroke-width="3"/>
+    <!-- Shield Icon -->
+    <path d="M 40 40 L 80 20 L 120 40 V 80 C 120 110 80 135 80 135 C 80 135 40 110 40 80 Z" fill="rgba(6, 182, 212, 0.15)" stroke="#06b6d4" stroke-width="3"/>
+    <path d="M 70 75 L 77 82 L 92 67" stroke="#10b981" stroke-width="4" fill="none"/>
+    <text x="35" y="155" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" stroke="none" fill="#ffffff">SMART CONTRACT</text>
+  </g>
+
+  <!-- Block 3 -->
+  <g transform="translate(550, 140)">
+    <rect width="140" height="120" rx="14" fill="#1e293b" stroke="#06b6d4" stroke-width="2"/>
+    <text x="20" y="35" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" fill="#06b6d4">BLOCK #002</text>
+    <text x="20" y="60" font-family="'Fira Code', monospace" font-size="10" fill="#94a3b8">Hash: 0x8b3e...</text>
+    <text x="20" y="80" font-family="'Inter', sans-serif" font-size="11" fill="#10b981">✓ Vote Encrypted</text>
+  </g>
+
+  <!-- Top Title Banner -->
+  <rect x="200" y="25" width="400" height="40" rx="10" fill="rgba(255,255,255,0.06)"/>
+  <text x="235" y="50" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700" fill="#ffffff">🔒 Decentralized Anonymous Voting Network</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradNiwala" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#27272a"/>
+    </linearGradient>
+    <linearGradient id="goldGradNiwala" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e8b931"/>
+      <stop offset="100%" stop-color="#ff6b35"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGradNiwala)" rx="16"/>
+
+  <!-- Phone UI Mockup -->
+  <rect x="270" y="30" width="260" height="340" rx="28" fill="#09090b" stroke="rgba(255,255,255,0.15)" stroke-width="4"/>
+  <!-- Phone Notch -->
+  <rect x="360" y="42" width="80" height="12" rx="6" fill="#18181b"/>
+
+  <!-- App Header -->
+  <text x="300" y="85" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="700" fill="#e8b931">Niwala Express 🛵</text>
+  <text x="300" y="105" font-family="'Inter', sans-serif" font-size="11" fill="#a1a1aa">Live Order Tracking #8492</text>
+
+  <!-- Status Card Inside Phone -->
+  <rect x="290" y="125" width="220" height="90" rx="14" fill="#18181b" stroke="rgba(232, 185, 49, 0.3)"/>
+  <circle cx="320" cy="155" r="16" fill="rgba(232, 185, 49, 0.2)"/>
+  <path d="M 314 155 L 318 159 L 326 151" stroke="#e8b931" stroke-width="3" fill="none"/>
+  <text x="345" y="152" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#ffffff">Order On The Way</text>
+  <text x="345" y="168" font-family="'Inter', sans-serif" font-size="10" fill="#10b981">Estimated: 12 Mins</text>
+
+  <!-- Progress Bar -->
+  <rect x="305" y="192" width="190" height="6" rx="3" fill="#27272a"/>
+  <rect x="305" y="192" width="140" height="6" rx="3" fill="url(#goldGradNiwala)"/>
+
+  <!-- Food Item Cards -->
+  <rect x="290" y="230" width="220" height="60" rx="10" fill="#18181b"/>
+  <rect x="302" y="240" width="40" height="40" rx="8" fill="#e8b931" opacity="0.3"/>
+  <text x="352" y="258" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#ffffff">Special Gourmet Meal</text>
+  <text x="352" y="274" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#e8b931">Rs. 1,250</text>
+
+  <!-- Multi-Role Badges Left & Right -->
+  <g transform="translate(60, 150)">
+    <rect width="160" height="50" rx="10" fill="#09090b" stroke="rgba(255,107,53,0.3)"/>
+    <text x="15" y="30" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#ff6b35">🛵 Rider Portal</text>
+  </g>
+  <g transform="translate(580, 150)">
+    <rect width="160" height="50" rx="10" fill="#09090b" stroke="rgba(16,185,129,0.3)"/>
+    <text x="15" y="30" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#10b981">📊 Admin Dashboard</text>
+  </g>
+</svg>

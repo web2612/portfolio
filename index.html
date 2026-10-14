@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muhammad Abbas Nadeem | Web Developer, SEO Specialist & Trader. Portfolio showcasing web applications, SEO optimization, and digital projects.">
+  <meta name="keywords" content="Muhammad Abbas Nadeem, Web Developer, SEO Specialist, Trader, Portfolio, React, SEO, YouTube Automation">
+  <meta name="author" content="Muhammad Abbas Nadeem">
+  <title>Muhammad Abbas Nadeem | Web Developer & SEO Specialist</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div class="preloader" id="preloader">
+    <div class="loader-ring"></div>
+    <div class="loader-text">Loading</div>
+  </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo" id="nav-logo">Abbas<span class="dot">.</span></a>
+      
+      <ul class="nav-menu" id="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button (Light/Dark White & Black Mode) -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle White/Black Theme" title="Toggle Light/Dark Theme">
+          <i data-lucide="moon" id="theme-icon"></i>
+        </button>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="hero-greeting">Hello, I'm</span>
+        <h1 class="hero-name">Muhammad <span class="accent">Abbas Nadeem</span></h1>
+        <h2 class="hero-role">
+          I'm a <span class="typing-text">Web Developer</span><span class="typing-cursor">|</span>
+        </h2>
+        <p class="hero-bio">
+          Motivated IT graduate crafting high-performance web applications, SEO optimization strategies, and automated digital media solutions.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
+            <i data-lucide="folder"></i> View My Work
+          </a>
+          <a href="https://wa.me/923144882824" target="_blank" class="btn btn-primary" id="hero-cta-cv" style="background-color: var(--gold); color: #ffffff;">
+            <i data-lucide="message-square"></i> Contact WhatsApp
+          </a>
+          <a href="#contact" class="btn btn-ghost" id="hero-cta-contact">
+            <i data-lucide="mail"></i> Let's Talk
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-photo-wrap">
+        <div class="hero-photo floating">
+          <img src="images/profile.jpg" alt="Muhammad Abbas Nadeem" loading="eager">
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-number counter" data-target="4">0</span><span class="stat-number">+</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number counter" data-target="10">0</span><span class="stat-number">+</span>
+        <span class="stat-label">Technologies</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number counter" data-target="100">0</span><span class="stat-number">%</span>
+        <span class="stat-label">Dedication</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section class="section section--alt" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Get to Know Me</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      
+      <div class="about-layout">
+        <div class="about-image-box reveal-left">
+          <img src="images/profile.jpg" alt="Muhammad Abbas Nadeem | Web Developer & SEO Specialist" loading="lazy">
+        </div>
+        
+        <div class="about-text reveal-right">
+          <p>
+            Hey! I'm <strong>Muhammad Abbas Nadeem</strong>, a dedicated <strong>Web Developer</strong>, <strong>SEO Specialist</strong>, and <strong>Financial Trader</strong> based in Jhang, Punjab. With a BS in Information Technology from the University of Jhang, I bring a strong technical mindset and creative problem-solving skills to every project.
+          </p>
+          <p>
+            My expertise includes building modern responsive websites, optimizing platforms for search engines (SEO), managing YouTube automation workflows, and analyzing financial markets (Forex & Crypto). I thrive on turning ideas into scalable, efficient, and user-centric web applications.
+          </p>
+          
+          <div class="about-info-grid">
+            <div class="about-info-item">
+              <div class="label">Location</div>
+              <div class="value">Jhang, Punjab, Pakistan</div>
+            </div>
+            <div class="about-info-item">
+              <div class="label">Education</div>
+              <div class="value">BS Information Technology</div>
+            </div>
+            <div class="about-info-item">
+              <div class="label">Languages</div>
+              <div class="value">English, Urdu, Punjabi</div>
+            </div>
+            <div class="about-info-item">
+              <div class="label">Certifications</div>
+              <div class="value">Office Management (Grade A)</div>
+            </div>
+          </div>
+          
+          <a href="https://wa.me/923144882824" target="_blank" class="btn btn-primary" id="hire-me-btn">
+            <i data-lucide="send"></i> Hire Me Today
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What I Use</span>
+        <h2 class="section-title">Skills & Tech Stack</h2>
+      </div>
+      
+      <div class="skills-grid stagger-container">
+        <div class="skill-card stagger-item reveal">
+          <div class="skill-icon"><i data-lucide="code-2"></i></div>
+          <h3 class="skill-name">Web Development</h3>
+          <p class="skill-desc">HTML5, CSS3, JavaScript, Responsive Web Architecture.</p>
+        </div>
+        
+        <div class="skill-card stagger-item reveal">
+          <div class="skill-icon"><i data-lucide="search"></i></div>
+          <h3 class="skill-name">SEO & Marketing</h3>
+          <p class="skill-desc">Search Engine Optimization, Keyword Strategy & Audience Growth.</p>
+        </div>
+        
+        <div class="skill-card stagger-item reveal">
+          <div class="skill-icon"><i data-lucide="play-square"></i></div>
+          <h3 class="skill-name">YouTube Automation</h3>
+          <p class="skill-desc">AI Content Strategies, Video Workflows & Channel Monetization.</p>
+        </div>
+        
+        <div class="skill-card stagger-item reveal">
+          <div class="skill-icon"><i data-lucide="trending-up"></i></div>
+          <h3 class="skill-name">Financial Trading</h3>
+          <p class="skill-desc">Forex & Crypto Technical Analysis, Chart Reading & Risk Control.</p>
+        </div>
+        
+        <div class="skill-card stagger-item reveal">
+          <div class="skill-icon"><i data-lucide="wrench"></i></div>
+          <h3 class="skill-name">Tools & Software</h3>
+          <p class="skill-desc">Android Studio, VS Code, Canva & MS Office Suite.</p>
+        </div>
+        
+        <div class="skill-card stagger-item reveal">
+          <div class="skill-icon"><i data-lucide="users"></i></div>
+          <h3 class="skill-name">Soft Skills</h3>
+          <p class="skill-desc">Problem Solving, Teamwork, Strategy & Digital Leadership.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section class="section section--alt" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">My Recent Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid stagger-container">
+        <!-- Project 1: Flock Camera Map -->
+        <div class="project-card stagger-item reveal" data-project="flock">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder bg-project-flock">
+              <i data-lucide="map-pin" style="width:54px; height:54px; color: var(--accent);"></i>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Flock Camera Map</h3>
+            <div class="project-tags">
+              <span class="project-tag">Web App</span>
+              <span class="project-tag">SEO Strategy</span>
+              <span class="project-tag">ALPR Mapping</span>
+            </div>
+            <p class="project-desc">Interactive web platform designed to find ALPR camera locations near you. Optimized for search engine visibility, fast response time, and user-friendly mobile navigation.</p>
+            <div class="project-links">
+              <button class="btn btn-ghost btn-sm open-project-modal" data-project="flock">
+                <i data-lucide="external-link"></i> Project Overview
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: NIWALA -->
+        <div class="project-card stagger-item reveal" data-project="niwala">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder bg-project-niwala">
+              <i data-lucide="shopping-bag" style="width:54px; height:54px; color: var(--gold);"></i>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Niwala: Food Delivery App</h3>
+            <div class="project-tags">
+              <span class="project-tag">Android App</span>
+              <span class="project-tag">Admin Panel</span>
+              <span class="project-tag">Real-Time Tracking</span>
+            </div>
+            <p class="project-desc">Full-stack food delivery application featuring multi-role login (User, Restaurant, Rider, Admin), real-time order status tracking, and in-app chat integration.</p>
+            <div class="project-links">
+              <button class="btn btn-ghost btn-sm open-project-modal" data-project="niwala">
+                <i data-lucide="external-link"></i> Project Overview
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Blockchain Voting -->
+        <div class="project-card stagger-item reveal" data-project="blockchain">
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder bg-project-blockchain">
+              <i data-lucide="shield-check" style="width:54px; height:54px; color: var(--accent);"></i>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Blockchain Voting System</h3>
+            <div class="project-tags">
+              <span class="project-tag">Blockchain</span>
+              <span class="project-tag">Smart Contracts</span>
+              <span class="project-tag">Decentralized</span>
+            </div>
+            <p class="project-desc">Secure and transparent digital voting system built on blockchain architecture to eliminate vote manipulation, ensure voter anonymity, and maintain tamper-proof records.</p>
+            <div class="project-links">
+              <button class="btn btn-ghost btn-sm open-project-modal" data-project="blockchain">
+                <i data-lucide="external-link"></i> Project Overview
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECT OVERVIEW MODAL ===================== -->
+  <div class="project-modal" id="project-modal">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="modal-header">
+        <span class="modal-badge" id="modal-badge">Project Showcase</span>
+        <h2 class="modal-title" id="modal-title">Project Title</h2>
+        <p class="modal-subtitle" id="modal-subtitle">Subheading</p>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-banner" id="modal-banner">
+          <div class="modal-banner-icon" id="modal-banner-icon">
+            <i data-lucide="folder-code"></i>
+          </div>
+        </div>
+
+        <div class="modal-info-block">
+          <h3><i data-lucide="info" style="color: var(--accent);"></i> Description & Purpose</h3>
+          <p id="modal-desc">Project description text...</p>
+        </div>
+
+        <div class="modal-info-block">
+          <h3><i data-lucide="check-circle-2" style="color: var(--gold);"></i> Key Features & Benefits</h3>
+          <ul class="modal-benefits-list" id="modal-benefits">
+            <!-- Dynamically populated -->
+          </ul>
+        </div>
+
+        <div class="modal-info-block">
+          <h3><i data-lucide="cpu" style="color: var(--accent);"></i> Tech Stack & Tools</h3>
+          <div class="modal-tech-tags" id="modal-tech-tags">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="#" target="_blank" class="btn btn-primary" id="modal-live-link">
+          <i data-lucide="external-link"></i> Open Live Link
+        </a>
+        <button class="btn btn-ghost" id="modal-close-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== EXPERIENCE & EDUCATION ===================== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">My Background</span>
+        <h2 class="section-title">Timeline</h2>
+      </div>
+      
+      <div class="timeline">
+        <!-- Exp 1: Web Developer & SEO Specialist -->
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2024 - PRESENT</span>
+            <h3 class="tl-title">Web Developer & SEO Specialist</h3>
+            <p class="tl-org">Full-Stack Development & Search Engine Optimization</p>
+            <p class="tl-desc">Crafting high-performance responsive web applications, implementing technical SEO strategies, optimizing user experiences, and driving organic search visibility.</p>
+          </div>
+        </div>
+
+        <!-- Exp 2: YouTube Automation -->
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2022 - PRESENT</span>
+            <h3 class="tl-title">YouTube Automation & Channel Manager</h3>
+            <p class="tl-org">Digital Media Content Strategist</p>
+            <p class="tl-desc">Managed and grew YouTube channels using automation tools and AI-driven content workflows. Handled video scripting, editing, SEO optimization, and AdSense monetization.</p>
+          </div>
+        </div>
+
+        <!-- Exp 3: Financial Trader -->
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2023 - 2025</span>
+            <h3 class="tl-title">Financial Trader</h3>
+            <p class="tl-org">Forex & Crypto Markets</p>
+            <p class="tl-desc">Actively traded financial markets with a disciplined strategy. Applied technical analysis, price action chart reading, and strict risk management protocols.</p>
+          </div>
+        </div>
+        
+        <!-- Edu 1 -->
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2022 - 2026</span>
+            <h3 class="tl-title">BS in Information Technology</h3>
+            <p class="tl-org">University of Jhang</p>
+            <p class="tl-desc">Currently pursuing Bachelor's degree in IT (CGPA: 2.96 / 4.0). Focused on web development, software engineering, and database systems.</p>
+          </div>
+        </div>
+        
+        <!-- Edu 2 -->
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2020 - 2022</span>
+            <h3 class="tl-title">FSC Pre-Engineering</h3>
+            <p class="tl-org">Faran Model College Jhang</p>
+            <p class="tl-desc">Completed intermediate education with strong analytical and mathematical skills. Marks: 767 / 1100.</p>
+          </div>
+        </div>
+        
+        <!-- Edu 3 -->
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2018 - 2020</span>
+            <h3 class="tl-title">Matriculation (Science)</h3>
+            <p class="tl-org">Arqam Secondary School Jhang</p>
+            <p class="tl-desc">Completed high school science studies with excellence. Marks: 836 / 1100.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Contact Info -->
+        <div class="contact-details reveal-left">
+          <div class="contact-item">
+            <div class="contact-item-icon"><i data-lucide="mail"></i></div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:alexhale2367@gmail.com">alexhale2367@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i data-lucide="phone"></i></div>
+            <div>
+              <h4>Phone / WhatsApp</h4>
+              <a href="https://wa.me/923144882824" target="_blank">0314-4882824</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i data-lucide="map-pin"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Jhang, Punjab, Pakistan</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-container reveal-right">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" class="form-input" id="contact-name" name="name" placeholder="e.g. John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Your Email</label>
+              <input type="email" class="form-input" id="contact-email" name="email" placeholder="e.g. john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Your Message</label>
+              <textarea class="form-textarea" id="contact-message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="contact-submit">
+              <i data-lucide="send"></i> Send Message
+            </button>
+            <div id="form-alert" class="form-alert"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand reveal-left">
+          <a href="#hero" class="nav-logo">Abbas<span class="dot">.</span></a>
+          <p>Building innovative web applications, search engine optimization strategies, and digital solutions.</p>
+        </div>
+        
+        <div class="footer-links reveal">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">My Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact reveal-right">
+          <h3>Contact Info</h3>
+          <ul>
+            <li><a href="mailto:alexhale2367@gmail.com" class="hover-shade"><i data-lucide="mail" style="width:16px; height:16px; margin-right:8px;"></i>alexhale2367@gmail.com</a></li>
+            <li><a href="https://wa.me/923144882824" target="_blank" class="hover-shade"><i data-lucide="phone" style="width:16px; height:16px; margin-right:8px;"></i>0314-4882824</a></li>
+            <li><span><i data-lucide="map-pin" style="width:16px; height:16px; margin-right:8px;"></i>Jhang, Pakistan</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; <span id="year"></span> Muhammad Abbas Nadeem. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="https://github.com" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <a href="mailto:alexhale2367@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+          <a href="https://wa.me/923144882824" target="_blank" aria-label="WhatsApp"><i data-lucide="message-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== BACK TO TOP ===================== -->
+  <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </a>
+
+  <!-- ===================== WHATSAPP FLOAT ===================== -->
+  <a href="https://wa.me/923144882824" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.66-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a5.8 5.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
